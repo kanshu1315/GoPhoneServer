@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	<servlet>
+		<servlet-name>ManufacturServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.ManufacturServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>FavoriteServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.FavoriteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GoodsServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.GoodsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>NewsServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.NewsServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UserServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.UserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ShopcartServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.ShopcartServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddressServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.AddressServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>OrderServlet</servlet-name>
+		<servlet-class>com.goophone.servlet.OrderServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ManufacturServlet</servlet-name>
+		<url-pattern>/api/manufactur</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewsServlet</servlet-name>
+		<url-pattern>/api/news</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserServlet</servlet-name>
+		<url-pattern>/api/user</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GoodsServlet</servlet-name>
+		<url-pattern>/api/goods</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FavoriteServlet</servlet-name>
+		<url-pattern>/api/favorite</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ShopcartServlet</servlet-name>
+		<url-pattern>/api/shopcart</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddressServlet</servlet-name>
+		<url-pattern>/api/address</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OrderServlet</servlet-name>
+		<url-pattern>/api/order</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<login-config>
+		<auth-method>BASIC</auth-method>
+	</login-config>
+</web-app>
